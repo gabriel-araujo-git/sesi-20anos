@@ -32,6 +32,47 @@ body {
   margin: 0 auto;
   padding: 0 20px;
 }
+/* Header institucional (Sistema Fiep, etc.) */
+.header-institucional {
+  background-color: #fff;
+  font-size: 12px;
+  color: #666;
+  padding: 8px 0;
+  border-bottom: 1px solid #e0e0e0;
+  z-index: 101;
+  position: relative;
+}
+
+.institucional-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.institucional-links,
+.institucional-acessos {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.institucional-links a,
+.institucional-acessos a {
+  color: #666;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.institucional-links a:hover,
+.institucional-acessos a:hover {
+  color: #003087; /* mesmo tom azul do SESI */
+}
+
+.institucional-links span {
+  color: #aaa;
+}
 
 a {
   text-decoration: none;
@@ -57,15 +98,73 @@ ul {
   margin-left: auto;
   margin-right: auto;
 }
-.hero{
-  background-image: url('b9b2c819c9bad658541dc6cc0279232cd9ac07ca.jpg'); /* <- Substitua pelo caminho correto */
+.hero {
+  background-image: url('b9b2c819c9bad658541dc6cc0279232cd9ac07ca.jpg'); /* fundo amarelo com sala */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 100px 0;
-   /* ou #fff se for necessário para contraste */
+  padding: 80px 0 60px;
   position: relative;
+  overflow: hidden;
 }
+
+.hero-overlay {
+  /* amarelo com leve opacidade */
+  width: 100%;
+  height: 100%;
+  position: relative;
+  padding: 60px 0 20px;
+}
+
+.hero-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.hero-left {
+  max-width: 50%;
+  padding: 20px;
+}
+
+.hero-selo {
+  width: 250px;
+  margin-bottom: 20px;
+}
+
+.hero-title {
+  font-size: 1.5rem;
+  color: var(--secondary-color);
+  margin-bottom: 10px;
+}
+
+.hero-subtitle {
+  font-size: 1.8rem;
+  color: #002f6e;
+  font-weight: 800;
+}
+
+.hero-right {
+  max-width: 45%;
+  text-align: center;
+}
+
+.hero-girl {
+  max-width: 100%;
+  height: auto;
+}
+
+.hero-logos {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.hero-logos img {
+  max-width: 100%;
+  height: auto;
+}
+
 /* Header Styles */
 header {
   background-color: white;
@@ -622,6 +721,40 @@ footer {
   height: 100%;
   border-radius: 10px;
 }
+
+.main-footer {
+  background-color: #ffd500;
+  padding: 40px 0;
+  color: #333;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-logo img {
+  height: 60px;
+}
+
+.footer-text {
+  max-width: 600px;
+}
+
+.footer-social a {
+  color: #333;
+  margin: 0 10px;
+  font-size: 20px;
+  transition: color 0.3s;
+}
+
+.footer-social a:hover {
+  color: #0072ce;
+}
+
 
 /* Animations */
 @keyframes fadeIn {
